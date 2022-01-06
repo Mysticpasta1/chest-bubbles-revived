@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[${fml_min},)"
+license="GPL v3.0"
+
+[[mods]]
+modId = "chestbubbles"
+version = "${mod_version}"
+displayName = "${mod_name}"
+description = '''
+Creates bubbles when chests are opened underwater.
+'''
+
+[[dependencies.chestbubbles]]
+    modId="forge"
+    mandatory=true
+    versionRange="[${forge_version},)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.chestbubbles]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.chestbubbles]]
+    modId="ironchests"
+    mandatory=false
+    ordering="AFTER"
+    side="BOTH"
