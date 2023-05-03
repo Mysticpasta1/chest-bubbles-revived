@@ -2,12 +2,11 @@
   "required": true,
   "minVersion": "0.8",
   "package": "azmalent.chestbubbles.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_17",
   "refmap": "chestbubbles.refmap.json",
   "mixins": [
     "ChestTileEntityMixin",
-    "EnderChestTileEntityMixin",
-    "IronChestTileEntityMixin"
+    "EnderChestTileEntityMixin"
   ],
   "client": [
   ],

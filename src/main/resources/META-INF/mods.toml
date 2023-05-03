@@ -1,11 +1,11 @@
 modLoader="javafml"
-loaderVersion="[${fml_min},)"
-license="GPL v3.0"
+loaderVersion="43"
+license="WTFPL"
 
 [[mods]]
 modId = "chestbubbles"
-version = "${mod_version}"
-displayName = "${mod_name}"
+version = "1.0.0"
+displayName = "Chest Bubbles Revived"
 description = '''
 Creates bubbles when chests are opened underwater.
 '''
@@ -13,14 +13,14 @@ Creates bubbles when chests are opened underwater.
 [[dependencies.chestbubbles]]
     modId="forge"
     mandatory=true
-    versionRange="[${forge_version},)"
+    versionRange="[43.2.9,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.chestbubbles]]
     modId="minecraft"
     mandatory=true
-    versionRange="${minecraft_version_range}"
+    versionRange="[1.19.2, 1.20)"
     ordering="AFTER"
     side="BOTH"
 
