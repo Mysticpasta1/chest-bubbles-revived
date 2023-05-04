@@ -6,7 +6,8 @@
   "refmap": "chestbubbles.refmap.json",
   "mixins": [
     "ChestTileEntityMixin",
-    "EnderChestTileEntityMixin"
+    "EnderChestTileEntityMixin",
+    "IronChestTileEntityMixin"
   ],
   "client": [
   ],
