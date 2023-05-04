@@ -7,7 +7,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.EnderChestBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import org.spongepowered.asm.mixin.Mixin;
@@ -20,8 +19,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class IronChestTileEntityMixin {
     private static int e, a;
 
-    @Inject(method = "lidAnimateTick", at = @At(value = "TAIL"))
-    private static void makeBubbleParticles(Level level, BlockPos blockPos, BlockState blockState, AbstractIronChestBlockEntity chestBlockEntity, CallbackInfo ci) {
+    @Inject(method = "lidAnimateTick", at = @At(value = "TAIL"), remap = false)
+    private static void makeBubbleParticles(Level level, BlockPos blockPos, BlockState blockState, AbstractIronChestBlockEntity self, CallbackInfo ci) {
         if (blockState.getValue(BlockStateProperties.WATERLOGGED) && self.triggerEvent((int) self.getOpenNess((float) e), a)) {
             RandomSource random = level.getRandom();
 
