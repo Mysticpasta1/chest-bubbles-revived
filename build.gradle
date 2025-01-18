@@ -18,7 +18,7 @@ ext.config = parseConfig(configFile)
 
 group = "azmalent.${config.modid}"
 archivesBaseName = config.modid
-version = "${config.minecraft_version}-1.0.0"
+version = "${config.minecraft_version}-1.0.1"
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '17' // Need this here so eclipse task generates correctly.
 
@@ -90,11 +90,11 @@ jar {
     manifest {
         attributes([
                 "Specification-Title": "${config.modid}",
-                "Specification-Vendor": "azmalent",
+                "Specification-Vendor": "Mysticpasta1",
                 "Specification-Version": "1",
                 "Implementation-Title": "${config.modid}",
-                "Implementation-Version": "1.0.0",
-                "Implementation-Vendor": "azmalent",
+                "Implementation-Version": "1.0.1",
+                "Implementation-Vendor": "Mysticpasta1",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
 
                 'TweakClass': 'org.spongepowered.asm.launch.MixinTweaker',

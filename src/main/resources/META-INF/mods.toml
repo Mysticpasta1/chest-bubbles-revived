@@ -4,7 +4,7 @@ license="WTFPL"
 
 [[mods]]
 modId = "chestbubbles"
-version = "1.0.0"
+version = "1.0.1"
 displayName = "Chest Bubbles Revived"
 description = '''
 Creates bubbles when chests are opened underwater.
@@ -20,7 +20,7 @@ Creates bubbles when chests are opened underwater.
 [[dependencies.chestbubbles]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2, 1.20)"
+    versionRange="[1.20.1, 1.20.2)"
     ordering="AFTER"
     side="BOTH"
 
